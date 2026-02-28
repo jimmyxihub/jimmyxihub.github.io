@@ -1,0 +1,120 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to bottom, #0d0d0d, #2d0036);
+    color: #fff;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    padding: 40px 0 20px;
+    position: sticky;
+    top: 0;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(5px);
+    z-index: 100;
+    animation: fadeDown 1s ease forwards;
+}
+
+header h1 {
+    font-size: 50px;
+    margin: 0;
+    font-weight: 800;
+    letter-spacing: 2px;
+    animation: fadeDown 1s ease forwards 0.2s;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    transition: color 0.3s;
+}
+
+nav a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: #a200ff;
+    transition: 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+nav a:hover {
+    color: #a200ff;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* About Section */
+.about {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 16px;
+    box-shadow: 0 0 40px rgba(162, 0, 255, 0.3);
+    animation: fadeUp 1s ease forwards;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 25px;
+    font-weight: 700;
+    animation: fadeUp 1s ease forwards 0.2s;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.8;
+    animation: fadeUp 1s ease forwards 0.4s;
+}
+
+/* Footer */
+footer {
+    margin-top: 100px;
+    padding: 20px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* Animations */
+@keyframes fadeDown {
+    0% { opacity: 0; transform: translateY(-20px);}
+    100% { opacity: 1; transform: translateY(0);}
+}
+
+@keyframes fadeUp {
+    0% { opacity: 0; transform: translateY(20px);}
+    100% { opacity: 1; transform: translateY(0);}
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 36px;
+    }
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+    .about {
+        padding: 30px;
+        margin: 50px 20px;
+    }
+}
