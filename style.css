@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(to bottom, #0d0d0d, ##003764);
+    background: linear-gradient(to bottom, #0d0d0d, #003764);
     color: #fff;
     text-align: center;
     overflow-x: hidden;
